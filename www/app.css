@@ -1,4 +1,45 @@
-.app-header { 
+.app-header {
 	height: 60px;
 	background-color: #E62118 !important;
+}
+
+.has-header {
+	top: 60px;
+}
+
+.add-btn {
+	background: none !important;
+	top: 8px !important;
+	bottom: 5px !important;
+}
+
+.app-header h1 {
+	font-family: 'Roboto-Regular';
+	font-size: 1.3rem !important;
+	top: 7px !important;
+	bottom: 5px !important;
+}
+
+.item-thumbnail-left>img:first-child {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	max-width: 138px;
+	width: 100%;
+	height: auto;
+}
+
+.item h2 {
+    margin: 0 0 2px 53px;
+		white-space: normal;
+}
+
+.item h3 {
+	margin: 0 0 2px 53px;
+	white-space: normal;
+	color: #ccc;
+}
+
+.playing {
+	
 }
