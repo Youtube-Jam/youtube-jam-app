@@ -7,6 +7,6 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
-    <content src="app.html" />
+    <content src="index.html" />
     <engine name="android" spec="~5.1.0" />
 </widget>
