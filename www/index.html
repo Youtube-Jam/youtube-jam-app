@@ -4,11 +4,11 @@
 
 		<title>Youtube Jam</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-		<link type="text/css" rel="stylesheet" href="bower_components/ionic/release/css/ionic.min.css" />
-		<link type="text/css" rel="stylesheet" href="bower_components/roboto-fontface/css/roboto-fontface.css" media="screen" />
-		<link type="text/css" rel="stylesheet" href="app.css" />
+		<link type="text/css" rel="stylesheet" href="bower_components/ionic/release/css/ionic.min.css">
+		<link type="text/css" rel="stylesheet" href="bower_components/roboto-fontface/css/roboto-fontface.css" media="screen">
+		<link type="text/css" rel="stylesheet" href="app.css">
 
 	</head>
 
@@ -30,12 +30,12 @@
 		<ion-nav-view>
 		</ion-nav-view>
 
-		<ion-footer-bar ng-if="showPlayer && nowPlaying">
+		<ion-footer-bar ng-if="showPlayer &amp;&amp; nowPlaying">
 
-				<div>
+				<div ng-if="nowPlaying">
 
 				 	<i class="icon ion-ios-play-outline"></i>
-					<h1>{{nowPlaying.info.title}}</h1>
+					<h1>{{nowPlaying.info.title | limitTo: 30}}{{nowPlaying.info.title.length >= 30 ? '...' : ''}}</h1>
 					<h3>{{nowPlaying.info.channel}}</h3>
 
 				</div>

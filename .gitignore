@@ -1,4 +1,6 @@
 .project
 www/bower_components
 ionic.project
+plugins
+.io-config.json
 platforms
