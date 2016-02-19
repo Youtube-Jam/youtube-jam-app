@@ -11,6 +11,7 @@
 		<link type="text/css" rel="stylesheet" href="app.css" />
 
 	</head>
+
 	<body ng-app="app">
 
 		<ion-nav-bar class="bar-assertive app-header" align-title="left">
@@ -29,13 +30,13 @@
 		<ion-nav-view>
 		</ion-nav-view>
 
-		<ion-footer-bar ng-if="showPlayer">
+		<ion-footer-bar ng-if="showPlayer && nowPlaying">
 
 				<div>
 
 				 	<i class="icon ion-ios-play-outline"></i>
-					<h1>Lana Del Rey - Born To Die</h1>
-					<h3>LanaDelReyVEVO</h3>
+					<h1>{{nowPlaying.info.title}}</h1>
+					<h3>{{nowPlaying.info.channel}}</h3>
 
 				</div>
 
@@ -43,6 +44,8 @@
 
 		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="bower_components/ionic/release/js/ionic.bundle.min.js"></script>
+		<script type="text/javascript" src="bower_components/angularfire/dist/angularfire.min.js"></script>
+		<script type="text/javascript" src="bower_components/firebase/firebase.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 		<script type="text/javascript" src="js/routes.js"></script>
 
