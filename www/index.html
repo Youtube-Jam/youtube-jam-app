@@ -19,86 +19,25 @@
 
 			<ul class="list">
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
+				<a class="item item-thumbnail-left" ng-repeat="video in playlist" >
+					<img ng-src="{{video.info.thumbnail}}" alt="" />
+					<h2>{{video.info.title}}</h2>
+					<h3>{{video.info.channel}}</h3>
+					<h3>{{video.info.postedAt}}</h3>
 				</a>
 
 			</ul>
 
 		</ion-content>
 
-		<ion-footer-bar class="bar-light playing">
-
+		<ion-footer-bar class="bar-assertive">
+			<h1 class="title">{{nowPlaying.info.title}}</h1>
 		</ion-footer-bar>
 
 		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="bower_components/ionic/release/js/ionic.bundle.min.js"></script>
+		<script type="text/javascript" src="bower_components/angularfire/dist/angularfire.min.js"></script>
+		<script type="text/javascript" src="bower_components/firebase/firebase.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 
 	</body>
