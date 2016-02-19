@@ -1,22 +1,26 @@
+.title {
+	left: 6px !important;
+	font-family: 'Roboto-Regular';
+	font-size: 1.3rem !important;
+	height: 100% !important;
+	display: flex !important;
+ 	flex-direction: column !important;
+ 	justify-content: center !important;
+  margin-top: -2px !important;
+}
+
 .app-header {
-	height: 60px;
+	height: 58px;
 	background-color: #E62118 !important;
 }
 
 .has-header {
-	top: 60px;
+	top: 58px;
 }
 
 .add-btn {
 	background: none !important;
-	top: 8px !important;
-	bottom: 5px !important;
-}
-
-.app-header h1 {
-	font-family: 'Roboto-Regular';
-	font-size: 1.3rem !important;
-	top: 7px !important;
+	top: 5px !important;
 	bottom: 5px !important;
 }
 
@@ -41,5 +45,52 @@
 }
 
 .playing {
-	
+
+}
+
+#search-bar label {
+	height: 100%;
+	font-size: 1.5rem !important;
+	background: none !important;
+}
+
+#search-bar input {
+	height: 100%;
+  width: 100%;
+  font-size: 1.1rem !important;
+}
+
+.grey-bar {
+	background-color: #F5F5F5 !important;
+	border: none !important;
+}
+
+ion-footer-bar {
+	height: 78px !important;
+	box-shadow: 1px -5px 9px rgba(0,0,0,0.3);
+}
+
+ion-footer-bar div {
+	margin: 0px auto;
+}
+
+ion-footer-bar i {
+	font-size: 4rem;
+	color: #E62118;
+	display: block;
+	float: left;
+	margin-right: 12px;
+}
+
+ion-footer-bar h1 {
+	display: block;
+	float: left;
+	font-size: 1.1rem;
+	font-weight: 300;
+	margin: 11px 0px 5px 0px;
+}
+
+ion-footer-bar h3 {
+	font-size: 0.8rem;
+	font-weight: 300;
 }

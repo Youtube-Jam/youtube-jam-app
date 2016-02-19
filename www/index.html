@@ -1,105 +1,50 @@
 <!doctype>
 <html>
 	<head>
+
 		<title>Youtube Jam</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
 		<link type="text/css" rel="stylesheet" href="bower_components/ionic/release/css/ionic.min.css" />
 		<link type="text/css" rel="stylesheet" href="bower_components/roboto-fontface/css/roboto-fontface.css" media="screen" />
 		<link type="text/css" rel="stylesheet" href="app.css" />
+
 	</head>
-	<body ng-app="app" ng-controller="MainController">
+	<body ng-app="app">
 
-		<ion-header-bar align-title="left" class="bar-assertive app-header">
-			<h1 class="title app-title text-center">{{title}}</h1>
-		  <div class="buttons">
-		    <button class="button add-btn"><i class="icon ion-plus"></i></button>
-		  </div>
-		</ion-header-bar>
+		<ion-nav-bar class="bar-assertive app-header" align-title="left">
 
-		<ion-content>
+			<ion-nav-back-button class="button-clear">
+				<i class="ion-android-arrow-back"></i>
+			</ion-nav-back-button>
 
-			<ul class="list">
+			<ion-nav-title></ion-nav-title>
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
+			<ion-nav-buttons>
+			</ion-nav-buttons>
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
+		</ion-nav-bar>
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
+		<ion-nav-view>
+		</ion-nav-view>
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
+		<ion-footer-bar ng-if="showPlayer">
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
+				<div>
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
+				 	<i class="icon ion-ios-play-outline"></i>
+					<h1>Lana Del Rey - Born To Die</h1>
+					<h3>LanaDelReyVEVO</h3>
 
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-				<a class="item item-thumbnail-left">
-					<img src="thumb.jpg" alt="" />
-					<h2>M83 - "Wait" (Official Video)</h2>
-					<h3>M83 Band</h3>
-					<h3>1 ano atrás</h3>
-				</a>
-
-			</ul>
-
-		</ion-content>
-
-		<ion-footer-bar class="bar-light playing">
+				</div>
 
 		</ion-footer-bar>
 
 		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript" src="bower_components/ionic/release/js/ionic.bundle.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="js/routes.js"></script>
 
 	</body>
 </html>
