@@ -94,3 +94,13 @@ ion-footer-bar h3 {
 	font-size: 0.8rem;
 	font-weight: 300;
 }
+
+.grey-bar .button {
+	margin-top: 3px;
+	margin-left: 8px;
+}
+
+.grey-bar i {
+	font-size: 1.3rem;
+	color: #727272;
+}

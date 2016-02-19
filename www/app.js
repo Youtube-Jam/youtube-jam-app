@@ -6,12 +6,14 @@ app.config(function($ionicConfigProvider) {
 
 });
 
-app.controller('HomeController', function($scope, $rootScope) {
+app.controller('HomeController', function($scope, $rootScope, $ionicLoading) {
 
-	$rootScope.showPlayer = true;
+	$ionicLoading.show();
 
 	$scope.playlist = [];
 	var nowPlaying = null;
+
+	$rootScope.showPlayer = true;
 
 	$scope.title = 'Youtube Jam';
 
@@ -21,7 +23,7 @@ app.controller('HomeController', function($scope, $rootScope) {
 		console.log('here');
 		var data = dataSnapshot.val();
 		$scope.playlist = [];
-		$scope.nowPlaying = null;
+		$rootScope.nowPlaying = null;
 
 		for(var key in data) {
 
@@ -40,17 +42,21 @@ app.controller('HomeController', function($scope, $rootScope) {
 				$scope.$apply();
 			}else if(snapshot.status == 0) {
 				console.log('add to nowPlaying');
-				$scope.nowPlaying = video;
+				$rootScope.nowPlaying = video;
 				$scope.$apply();
 			}
 
 		}
 
+		$ionicLoading.hide();
+
 	});
 
 });
 
-app.controller('AddVideoController', function($scope) {
+app.controller('AddVideoController', function($scope, $rootScope) {
+
+	$rootScope.showPlayer = false;
 
 	$scope.$on('$ionicView.beforeEnter', function() {
 
